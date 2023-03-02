@@ -1,0 +1,35 @@
+.education {
+  min-height: 100vh;
+  padding: 100px 0;
+  background-color: $brown-color;
+  text-align: center;
+  color: white;
+}
+
+.education__title {
+  margin-bottom: 40px;
+  font-size: 92px;
+}
+.education__info {
+  margin: 0 auto;
+  width: 90%;
+}
+.education__certificates {
+  overflow: hidden;
+  margin-top: 80px;
+}
+.certificates__slider {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+}
+.slider__item {
+  flex: none;
+  width: 700px;
+  height: 480px;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: drop-shadow(4px 5px 14px rgba(0, 0, 0, 0.15));
+}

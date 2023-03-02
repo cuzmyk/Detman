@@ -1,0 +1,61 @@
+.header {
+  min-height: 100vh;
+  padding-bottom: 50px;
+  position: relative;
+}
+.header::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-image: url(./../../images/heroLine.svg);
+}
+
+.header .header__nav {
+  padding: 90px 0;
+  font-size: 20px;
+}
+.header__nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav a {
+  color: $text-color;
+}
+.header__hero {
+  margin: 0 auto;
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  column-gap: 40px;
+  background-size: cover;
+}
+.hero__photo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.hero__info {
+  padding-bottom: 100px;
+}
+.hero__subtitle {
+  margin-bottom: 15px;
+  @extend %subtitle-text;
+}
+.hero__title {
+  margin-bottom: 85px;
+  font-size: 170px;
+
+  color: $green-color;
+}
+.hero__article {
+  margin-bottom: 85px;
+  @extend %regular-text;
+  font-size: 22px;
+}
+
+.hero__btn {
+}

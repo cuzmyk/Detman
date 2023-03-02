@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "BebasNeue";
+  font-weight: 700;
+  src: url(./../../fonts/BebasNeueBold.otf);
+}
+@font-face {
+  font-family: "BebasNeue";
+  font-weight: 400;
+  src: url(./../../fonts/BebasNeueRegular.ttf);
+}
+
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 400;
+  src: url(./../../fonts/gothampro.ttf);
+}
+
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 500;
+  src: url(./../../fonts/gothampro_medium.ttf);
+}
+
+// $primary-color: #171717;
+$primary-color: #fff;
+$brown-color: #5b2f10;
+$green-color: #336a4c;
+$text-color: #000;
+
+%regular-text {
+  font-family: "GothamPro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  // font-size: calc(#{$index} * 1.01);
+  line-height: 1.4;
+  color: $text-color;
+}
+
+%subtitle-text {
+  font-family: "BebasNeue", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.4;
+  color: $text-color;
+  text-transform: uppercase;
+}
+
+%title-text {
+  font-family: "BebasNeue", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+body {
+  @extend %regular-text;
+  background-color: $primary-color;
+  overflow-x: hidden;
+}
+
+.container {
+  width: clamp(600px, 100%, 1300px);
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  @extend %title-text;
+  line-height: 0.9;
+}
+
+.btn {
+  padding: 8px;
+  background: linear-gradient(
+    91.76deg,
+    #c79a2e 4.86%,
+    #f4d975 43.43%,
+    #f5db76 56.8%,
+    #c79a2e 98.46%
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  color: #fff;
+  width: 420px;
+  text-transform: uppercase;
+  @extend %subtitle-text;
+  font-weight: 700;
+}
