@@ -27,4 +27,11 @@
   .reviews__title {
     margin-bottom: 15px;
   }
+  .reviews__slider {
+    height: 260px;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
 }

@@ -86,14 +86,13 @@
 }
 .hero__photo img {
   position: absolute;
-  // height: 100%;
   height: auto;
-  width: 100%;
+  width: 80%;
   object-fit: cover;
   bottom: 0;
-  right: 0;
+  right: 50%;
+  transform: translateX(50%);
 }
-
 .hero__info {
   padding-bottom: 100px;
 }
@@ -111,6 +110,9 @@
   margin-bottom: 8vh;
   @extend %regular-text;
   font-size: 22px;
+  b {
+    font-weight: inherit;
+  }
 }
 
 @media (max-width: 1310px) {
@@ -172,19 +174,29 @@
   }
 
   .hero__article {
+    width: 70%;
     position: relative;
     font-size: 12px;
     margin-bottom: 0;
-    &::after {
+    margin: 0 auto;
+    b {
       position: absolute;
-      content: "Использую методики с доказанной эффективностью!";
-      text-align: center;
       bottom: -40px;
       left: 50%;
-      width: 100%;
+      width: 150%;
       transform: translateX(-50%);
       font-weight: 500;
     }
+    // &::after {
+    //   position: absolute;
+    //   content: "Использую методики с доказанной эффективностью!";
+    //   text-align: center;
+    //   bottom: -40px;
+    //   left: 50%;
+    //   width: 100%;
+    //   transform: translateX(-50%);
+    //   font-weight: 500;
+    // }
   }
   .hero__btn {
     position: absolute;

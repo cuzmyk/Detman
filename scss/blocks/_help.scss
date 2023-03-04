@@ -88,13 +88,13 @@
   .help__items {
     display: grid;
     grid-gap: 7px;
-    grid-template: repeat(3, 1fr) / repeat(3, 30%);
+    grid-template: repeat(3, 1fr) / repeat(3, 33.3%);
   }
   .help__title {
     margin-bottom: 25px;
   }
   .help__item {
-    padding: 50px 5px 5px;
+    padding: 50px 15px 5px;
     border-radius: 7px;
   }
   .help__item:nth-child(5) {

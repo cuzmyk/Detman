@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "BebasNeue";
   font-weight: 700;
@@ -387,10 +386,11 @@ legend {
 .hero__photo img {
   position: absolute;
   height: auto;
-  width: 100%;
+  width: 80%;
   object-fit: cover;
   bottom: 0;
-  right: 0;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .hero__info {
@@ -411,6 +411,9 @@ legend {
 .hero__article {
   margin-bottom: 8vh;
   font-size: 22px;
+}
+.hero__article b {
+  font-weight: inherit;
 }
 
 @media (max-width: 1310px) {
@@ -484,17 +487,17 @@ legend {
   }
 
   .hero__article {
+    width: 70%;
     position: relative;
     font-size: 12px;
     margin-bottom: 0;
+    margin: 0 auto;
   }
-  .hero__article::after {
+  .hero__article b {
     position: absolute;
-    content: "Использую методики с доказанной эффективностью!";
-    text-align: center;
     bottom: -40px;
     left: 50%;
-    width: 100%;
+    width: 150%;
     transform: translateX(-50%);
     font-weight: 500;
   }
@@ -709,7 +712,7 @@ legend {
   .help__items {
     display: grid;
     grid-gap: 7px;
-    grid-template: repeat(3, 1fr) / repeat(3, 30%);
+    grid-template: repeat(3, 1fr) / repeat(3, 33.3%);
   }
 
   .help__title {
@@ -717,7 +720,7 @@ legend {
   }
 
   .help__item {
-    padding: 50px 5px 5px;
+    padding: 50px 15px 5px;
     border-radius: 7px;
   }
 
@@ -764,6 +767,14 @@ legend {
 
   .reviews__title {
     margin-bottom: 15px;
+  }
+
+  .reviews__slider {
+    height: 260px;
+  }
+  .reviews__slider img {
+    height: 100%;
+    width: auto;
   }
 }
 .consultations {
