@@ -1,5 +1,4 @@
 .header {
-  min-height: 100vh;
   padding-bottom: 50px;
   position: relative;
 }
@@ -9,33 +8,90 @@
   bottom: 0;
   width: 100%;
   height: 80px;
-  background-image: url(./../../images/heroLine.svg);
+  background-image: url(./../../images/transitions/heroLine.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
-.header .header__nav {
-  padding: 90px 0;
+.header__nav {
+  padding: 50px 0;
   font-size: 20px;
+}
+
+.header__nav button[data-navigation="button"] {
+  height: 21px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  display: none;
+}
+.menu__icon {
+  height: 5px;
+  width: 28px;
+  background-color: $green-color;
+  border-radius: 10px;
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    height: 5px;
+    width: 28px;
+    background-color: $green-color;
+    border-radius: 10px;
+  }
+  &::after {
+    top: 0px;
+  }
+  &::before {
+    bottom: 0px;
+  }
 }
 .header__nav ul {
   display: flex;
   justify-content: space-between;
 }
 .header__nav a {
+  padding-bottom: 10px;
+  position: relative;
   color: $text-color;
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $green-color;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+  }
+  &:hover::after {
+    transform-origin: left;
+
+    transform: scaleX(1);
+  }
 }
-.header__hero {
-  margin: 0 auto;
-  max-width: 1300px;
+.header__hero .container {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template: 1fr / 50% 50%;
   justify-content: center;
   column-gap: 40px;
   background-size: cover;
 }
 .hero__photo {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  position: relative;
+}
+.hero__photo img {
+  position: absolute;
+  // height: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  bottom: 0;
+  right: 0;
 }
 
 .hero__info {
@@ -46,16 +102,97 @@
   @extend %subtitle-text;
 }
 .hero__title {
-  margin-bottom: 85px;
+  margin-bottom: 8vh;
   font-size: 170px;
-
+  line-height: 0.9;
   color: $green-color;
 }
 .hero__article {
-  margin-bottom: 85px;
+  margin-bottom: 8vh;
   @extend %regular-text;
   font-size: 22px;
 }
 
-.hero__btn {
+@media (max-width: 1310px) {
+  .header__nav {
+    font-size: 15px;
+  }
+  .hero__title {
+    font-size: 130px;
+  }
+  .hero__article {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    height: 100vh;
+  }
+  .header::after {
+    height: 40px;
+  }
+  .header__nav {
+    padding: 30px 0;
+  }
+  .header__nav ul[data-navigation="list"] {
+    display: none;
+  }
+  .header__nav button[data-navigation="button"] {
+    display: block;
+  }
+  .header__hero .container {
+    position: relative;
+    grid-template: calc(100vh - 81px) / 1fr;
+  }
+  .hero__photo {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 0;
+  }
+  .hero__photo img {
+    position: absolute;
+    height: auto;
+  }
+  .hero__info {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 40vh;
+  }
+  .hero__title {
+    font-size: 90px;
+    margin-bottom: 4vh;
+  }
+  .hero__subtitle {
+    font-size: 17px;
+  }
+  .hero__info > * {
+    text-align: center;
+  }
+
+  .hero__article {
+    position: relative;
+    font-size: 12px;
+    margin-bottom: 0;
+    &::after {
+      position: absolute;
+      content: "Использую методики с доказанной эффективностью!";
+      text-align: center;
+      bottom: -40px;
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%);
+      font-weight: 500;
+    }
+  }
+  .hero__btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10vh;
+    &:hover {
+      transform: translate(calc(-50% + 3px), 3px);
+    }
+  }
 }

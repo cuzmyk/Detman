@@ -11,35 +11,38 @@
     <header class="header" style="background-image: url(./images/herobg.png)">
       <div class="container">
         <nav class="header__nav">
-          <ul>
-            <li><a href="#">Обо мне</a></li>
-            <li><a href="#">Чем могу помочь?</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Услуги и стоимость</a></li>
-            <li><a href="#">Мои соцсети</a></li>
+          <ul data-navigation="list">
+            <li><a href="#education">Обо мне</a></li>
+            <li><a href="#help">Чем могу помочь?</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#consultations">Услуги и стоимость</a></li>
+            <li><a href="#footer">Мои соцсети</a></li>
           </ul>
+          <button data-navigation="button">
+            <div class="menu__icon"></div>
+          </button>
         </nav>
       </div>
       <div class="header__hero">
-        <div
-          class="hero__photo"
-          style="background-image: url(./images/photo.png)"
-        ></div>
-        <div class="hero__info">
-          <h3 class="hero__subtitle">
-            Нутрициолог. Специализация – РПП и нарушение питания.
-          </h3>
-          <h1 class="title hero__title">Екатерина Детман</h1>
-          <p class="hero__article">
-            Обучаю здоровому питанию без запретов, помогаю подружиться с едой
-            после диет и прийти к стабильному весу. Использую методики с
-            доказанной эффективностью!
-          </p>
-          <button class="btn hero__btn">Записаться на консультацию</button>
+        <div class="container">
+          <div class="hero__photo"><img src="./images/photo.png" alt="" /></div>
+          <div class="hero__info">
+            <h3 class="hero__subtitle">
+              Нутрициолог. Специализация – РПП и нарушение питания.
+            </h3>
+            <h1 class="title hero__title">Екатерина Детман</h1>
+            <p class="hero__article">
+              Обучаю здоровому питанию без запретов, помогаю подружиться с едой
+              после диет и прийти к стабильному весу. Использую методики с
+              доказанной эффективностью!
+            </p>
+            <button class="btn hero__btn">Записаться на консультацию</button>
+          </div>
         </div>
       </div>
     </header>
-    <section class="education">
+
+    <section class="education" id="education">
       <div class="container">
         <h2 class="title education__title">моё образование</h2>
         <p class="education__info">
@@ -67,7 +70,7 @@
         </div>
       </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <div class="container">
         <p class="services__intro">
           Если вы читаете эти строки, то уже убедились,
@@ -85,74 +88,301 @@
         </h2>
       </div>
     </section>
-    <section class="help">
+    <section class="help" id="help">
       <div class="container">
-        <div class="title help__title">Я могу вам помочь если</div>
+        <h2 class="title help__title">Я могу вам помочь если</h2>
         <div class="help__items">
           <div class="help__item">
-            <div class="help__img"><img src="./images/help/1.png" alt=""></div>
-            <div class="help__desc">вы заедаете
-              эмоции и стресс</div>
+            <div class="help__img">
+              <img src="./images/help/1.png" alt="" />
+            </div>
+            <p class="help__desc">вы заедаете эмоции и стресс</p>
           </div>
           <div class="help__item">
-            <div class="help__img"><img src="./images/help/2.png" alt=""></div>
-            <div class="help__desc">вы застряли в круге
-              «диета-срыв-набор
-              веса-диета»</div>
+            <div class="help__img">
+              <img src="./images/help/2.png" alt="" />
+            </div>
+            <p class="help__desc">
+              вы застряли в круге «диета-срыв-набор веса-диета»
+            </p>
           </div>
           <div class="help__item">
-            <div class="help__img"><img src="./images/help/3.png" alt=""></div>
-            <div class="help__desc">вы устали
-              считать калории</div>
+            <div class="help__img">
+              <img src="./images/help/3.png" alt="" />
+            </div>
+            <p class="help__desc">вы устали считать калории</p>
           </div>
           <div class="help__item">
-            <div class="help__img"><img src="./images/help/4.png" alt=""></div>
-            <div class="help__desc">вы испытываете
-              вину после того,
-              как едите сладкое</div>
+            <div class="help__img">
+              <img src="./images/help/4.png" alt="" />
+            </div>
+            <p class="help__desc">
+              вы испытываете вину после того, как едите сладкое
+            </p>
           </div>
           <div class="help__item">
-            <div class="help__desc">вы отрабатываете
-              съеденное спортом,
-              пьёте мочегонные
-              и слабительные
-              для контроля веса,
-              вырываете после еды</div>
+            <p class="help__desc">
+              вы отрабатываете съеденное спортом, пьёте мочегонные и
+              слабительные для контроля веса, вырываете после еды
+            </p>
           </div>
           <div class="help__item">
-            <div class="help__img"><img src="./images/help/5.png" alt=""></div>
-            <div class="help__desc">вы переедаете и не
-              можете вовремя
-              остановиться</div>
+            <div class="help__img">
+              <img src="./images/help/5.png" alt="" />
+            </div>
+            <p class="help__desc">
+              вы переедаете и не можете вовремя остановиться
+            </p>
           </div>
           <div class="help__item">
-            <div class="help__img"><img src="./images/help/6.png" alt=""></div>
-            <div class="help__desc">вы не чувствуете
-              голод и насыщение</div>
+            <div class="help__img">
+              <img src="./images/help/6.png" alt="" />
+            </div>
+            <p class="help__desc">вы не чувствуете голод и насыщение</p>
           </div>
           <div class="help__item">
-            <div class="help__img"><img src="./images/help/7.png" alt=""></div>
-            <div class="help__desc">вы стесняетесь своего
-              тела или испытываете
-              отвращение к нему</div>
+            <div class="help__img">
+              <img src="./images/help/7.png" alt="" />
+            </div>
+            <p class="help__desc">
+              вы стесняетесь своего тела или испытываете отвращение к нему
+            </p>
           </div>
           <div class="help__item">
-            <div class="help__img"><img src="./images/help/8.png" alt=""></div>
-            <div class="help__desc">вы испытываете
-              страх перед едой</div>
+            <div class="help__img">
+              <img src="./images/help/8.png" alt="" />
+            </div>
+            <p class="help__desc">вы испытываете страх перед едой</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="reviews">
-      <div class="title reviews__title">Отзывы</div>
-      <div class="reviews__slider">
-        <div class="reviews__slide"></div>
-        <div class="reviews__slide"></div>
-        <div class="reviews__slide"></div>
-        <div class="reviews__slide"></div>
-        <div class="reviews__slide"></div>
+    <main style="background-image: url(./images/mainbg.png)">
+      <section class="reviews" id="reviews">
+        <h2 class="title reviews__title">Отзывы</h2>
+        <div class="reviews__slider">
+          <div class="reviews__slide">
+            <img src="./images/reviews/review(1).jpg" alt="" />
+          </div>
+          <div class="reviews__slide">
+            <img src="./images/reviews/review(2).jpg" alt="" />
+          </div>
+          <div class="reviews__slide">
+            <img src="./images/reviews/review(3).jpg" alt="" />
+          </div>
+          <div class="reviews__slide">
+            <img src="./images/reviews/review(4).jpg" alt="" />
+          </div>
+          <div class="reviews__slide">
+            <img src="./images/reviews/review(5).jpg" alt="" />
+          </div>
+          <div class="reviews__slide">
+            <img src="./images/reviews/review(6).jpg" alt="" />
+          </div>
+          <div class="reviews__slide">
+            <img src="./images/reviews/review(7).jpg" alt="" />
+          </div>
+          <div class="reviews__slide">
+            <img src="./images/reviews/review(8).jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="consultations" id="consultations">
+        <div class="container">
+          <h2 class="title consultations__title">Услуги и стоимость</h2>
+          <div class="consultations__cons">
+            <h3 class="title cons__title">
+              Вводная консультация <b>БЕСПЛАТНО</b>
+            </h3>
+            <div class="cons__desc">
+              <p class="cons__row">Видеозвонок 30 минут</p>
+              <p class="cons__row">Эспресс-тест на наличие РПП</p>
+              <p class="cons__row">Ответы на вопросы по весу и питанию</p>
+            </div>
+            <button class="btn cons__btn">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
+          </div>
+          <div class="consultations__cons">
+            <h3 class="title cons__title">
+              Разовая консультация <b>3 000 ₽</b>
+            </h3>
+            <div class="cons__desc">
+              <p class="cons__row">Видеозвонок 60 минут</p>
+              <p class="cons__row">Работаем по запросу</p>
+            </div>
+            <button class="btn cons__btn">Оплатить</button>
+          </div>
+        </div>
+        <div class="consultationas__bg">
+          <img src="./images/photo2.png" alt="" />
+        </div>
+      </section>
+      <section class="pricelist">
+        <div class="container">
+          <h2 class="title pricelist__title">
+            ИНДИВИДУАЛЬНОЕ <br />
+            СОПРОВОЖДЕНИЕ. ТАРИФЫ
+          </h2>
+          <div class="pricelist__rate">
+            <div class="rate__header">
+              <h3 class="title rate__title">ТАРИФ «ТОЛЬКО ПИТАНИЕ»</h3>
+              <h3 class="rate__price" data-sale="12 000 ₽">
+                10 200 ₽ / 1 месяц
+              </h3>
+            </div>
+            <div class="rate_desc">
+              <p class="rate__row">Вводная консультация – знакомство</p>
+              <p class="rate__row">Индивидуальный чат для общения</p>
+              <p class="rate__row">
+                Пошаговое обучение здоровому питанию* («План трёх» М. Херрин)
+              </p>
+              <p class="rate__row">Ежедневный разбор фото-дневника питания</p>
+              <p class="rate__row">
+                Поддержка и мотивация в освоении материала
+              </p>
+              <p class="rate__row">Ответы на вопросы текстом и голосом</p>
+              <p class="rate__explanation">
+                * «План трёх» - мягкая методика здорового питания без запретов и
+                подсчёта калорий. Подходит и здоровым людям, и людям с
+                нарушением питания или РПП.
+              </p>
+            </div>
+            <div class="rate__credit">
+              Возможна рассрочка на 6/12 месяцев. Скидка при единовременной
+              оплате - 15%
+            </div>
+            <button class="btn rate__btn">Оплатить</button>
+          </div>
+          <div class="pricelist__rate">
+            <div class="rate__header">
+              <h3 class="title rate__title">ТАРИФ «САМА С ПОДДЕРЖКОЙ»</h3>
+              <h3 class="rate__price" data-sale="42 000 ₽">
+                35 700 ₽ / 3 месяца
+              </h3>
+            </div>
+            <div class="rate_desc">
+              <div class="rate__row">
+                Полная диагностика пищевого поведения: диагностическое интервью
+                + тестирование
+              </div>
+              <div class="rate__row">
+                Гайд по «Плану трёх» М. Херрин для самостоятельного изучения
+              </div>
+              <div class="rate__row">
+                Разбор фото-дневника питания 1 день в неделю (на консультации)
+              </div>
+              <div class="rate__row">
+                Консультация 60 минут 1 раз в неделю (12 консультаций за курс)
+              </div>
+              <div class="rate__row">
+                Домашние задания и их проверка на консультациях
+              </div>
+
+              <p class="rate__explanation"></p>
+            </div>
+            <div class="rate__credit">
+              Возможна рассрочка на 6/12 месяцев. Скидка при единовременной
+              оплате - 15%
+            </div>
+            <button class="btn rate__btn">Оплатить</button>
+          </div>
+          <div class="pricelist__rate">
+            <div class="rate__header">
+              <div class="title rate__title">
+                VIP-ТАРИФ «СОПРОВОЖДЕНИЕ ПОД КЛЮЧ»
+              </div>
+              <div class="rate__price" data-sale="72 000 ₽">
+                61 200 ₽ / 3 месяца
+              </div>
+            </div>
+            <div class="rate_desc">
+              <div class="rate__row">
+                Полная диагностика пищевого поведения: диагностическое интервью
+                + тестирование
+              </div>
+              <div class="rate__row">
+                Пошаговое обучение «Плану трёх» М. Херрин
+              </div>
+              <div class="rate__row">
+                Разбор фото-дневника питания ежедневно 7 дней в неделю
+              </div>
+              <div class="rate__row">
+                Консультация 60 минут 1 раз в неделю (12 консультаций за курс)
+              </div>
+              <div class="rate__row">Индивидуальный чат для общения</div>
+              <div class="rate__row">
+                Ежедневная поддержка и мотивация в освоении материала
+              </div>
+              <div class="rate__row">
+                Ежедневно ответы на любые вопросы текстом и голосом
+              </div>
+              <div class="rate__row">
+                Домашние задания и их проверка на консультациях и в чате
+              </div>
+              <div class="rate__row">
+                Поддержка после завершения сопровождения
+              </div>
+              <p class="rate__explanation">
+                <b>Для VIP-тарифа +2 КОНСУЛЬТАЦИИ В ПОДАРОК.</b> <br />
+                <br />
+                Ими можно воспользоваться в течение двух месяцев после
+                завершения сопровождения. Это позволит мягко выйти в
+                «самостоятельное плавание» после ведения за ручку.
+              </p>
+            </div>
+            <div class="rate__credit">
+              Возможна рассрочка на 6/12 месяцев. Скидка при единовременной
+              оплате - 15%
+            </div>
+            <button class="btn rate__btn">Оплатить</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="addition">
+      <div class="container">
+        <h2 class="title addition__title">
+          В рамках тарифов «САМА С ПОДДЕРЖКОЙ» и «ПОД КЛЮЧ» помимо питания мы
+          разбираем следующие темы:
+        </h2>
+        <p>Мотивация к восстановлению пищевого поведения</p>
+        <p>Осознанное питание и осознанность в жизни, навыки и инструменты</p>
+        <p>
+          Навыки управления эмоциями. Быстрая самопомощь при эмоциональном и
+          экстернальном типах переедания
+        </p>
+        <p>
+          Ограничивающие убеждения по весу, фигуре, питанию. Учимся думать
+          по-другому
+        </p>
+        <p>Сверхценность веса и фигуры, ищем другие опоры для самооценки</p>
+        <p>Ложное чувство полноты и самопомощь при нём</p>
+        <p>
+          Сравнение себя с другими. Как перестать сравнивать и раскрыть
+          собственную индивидуальность?
+        </p>
+        <p>Голос РПП. Учимся распознавать и не поддаваться ему!</p>
+        <p>Принятие себя и образ тела. Навыки телесной осознанности.</p>
+        <p>
+          Детство, формирование отношений с едой, разбираем пищевые традиции
+          семьи, здесь всегда много открытий, зачем и почему вы едите в
+          определённые моменты?
+        </p>
+        <p>
+          Определяем тип привязанности и его роль в формировании пищевого
+          поведения
+        </p>
+        <p>
+          Эго-состояния: взрослый, ребёнок, родитель. Учимся определять своё
+          состояние и совершать поступки из позиции взрослого.
+        </p>
       </div>
     </section>
+    <footer class="footer" id="footer">
+      <h2 class="footer__title title">мои соцсети</h2>
+      <div class="footer__links">
+        <a href="#"><img src="./images/telegram.png" alt="telegram" /></a>
+        <a href="#"><img src="./images/vk.png" alt="vkontakte" /></a>
+      </div>
+    </footer>
   </body>
 </html>

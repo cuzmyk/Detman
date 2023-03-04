@@ -8,7 +8,6 @@
 
 .education__title {
   margin-bottom: 40px;
-  font-size: 92px;
 }
 .education__info {
   margin: 0 auto;
@@ -32,4 +31,14 @@
   background-repeat: no-repeat;
   background-position: center;
   filter: drop-shadow(4px 5px 14px rgba(0, 0, 0, 0.15));
+}
+
+@media (max-width: 1000px) {
+  .education {
+    min-height: auto;
+  }
+  .slider__item {
+    height: 200px;
+    width: 280px;
+  }
 }

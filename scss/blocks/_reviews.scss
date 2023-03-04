@@ -1,0 +1,30 @@
+.reviews {
+  padding: 250px 0 150px;
+  overflow: hidden;
+}
+.reviews__title {
+  margin-bottom: 66px;
+  text-align: center;
+  color: $green-color;
+}
+.reviews__slider {
+  display: flex;
+  justify-content: center;
+  column-gap: 25px;
+}
+.reviews__slide {
+  filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.1));
+  border-radius: 20px;
+  flex: none;
+}
+.reviews__slide img {
+  border-radius: inherit;
+}
+@media (max-width: 1000px) {
+  .reviews {
+    padding: 100px 0 25px;
+  }
+  .reviews__title {
+    margin-bottom: 15px;
+  }
+}
