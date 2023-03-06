@@ -1,22 +1,49 @@
 const swiperEd = new Swiper(".certificates__slider", {
-  spaceBetween: 30,
-  slidesPerView: 2.5,
+  spaceBetween: 50,
+
+  slidesPerView: 1,
+  centeredSlides: true,
+
+  mousewheel: true,
+
+  breakpoints: {
+    1000: {
+      slidesPerView: 2.5,
+      centeredSlides: false,
+    },
+  },
+
   speed: 1000,
   grabCursor: true,
 
-  mousewheel: {
-    sensitivity: 1,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
 const swiperRe = new Swiper(".reviews__slider", {
-  roundLengths: true,
   spaceBetween: 30,
-  slidesPerView: 5,
+
+  slidesPerView: 1,
+  centeredSlides: true,
+
+  mousewheel: true,
+
+  breakpoints: {
+    1000: {
+      slidesPerView: 5,
+      centeredSlides: false,
+    },
+  },
+
   speed: 1000,
   grabCursor: true,
 
-  mousewheel: {
-    sensitivity: 2,
+  navigation: {
+    nextEl: ".swiper-button-next-rev",
+    prevEl: ".swiper-button-prev-rev",
   },
+
+  //   roundLengths: true,
 });

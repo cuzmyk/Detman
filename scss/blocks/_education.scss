@@ -33,9 +33,12 @@
   margin-top: 80px;
 }
 .certificates__slider {
+  margin: 0 auto;
+
+  max-width: 95%;
 }
 .slider__item {
-  margin: 0 20px;
+  // margin: 0 20px;
   flex: none;
   width: 700px;
   aspect-ratio: 3/2;
@@ -47,12 +50,36 @@
   filter: drop-shadow(4px 5px 14px rgba(0, 0, 0, 0.15));
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+  transform: translateY(17vh);
+  background-size: cover;
+  width: 15.47px;
+  height: 23px;
+  &::after {
+    display: none;
+  }
+}
+.swiper-button-prev {
+  background-image: url(./../../images/icons/edLeft.svg);
+}
+.swiper-button-next {
+  background-image: url(./../../images/icons/edRight.svg);
+}
+
 @media (max-width: 1000px) {
+  .certificates__slider {
+    max-width: 80%;
+  }
   .education {
     min-height: auto;
   }
   .slider__item {
-    height: 200px;
     width: 280px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
   }
 }
