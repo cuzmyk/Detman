@@ -1,9 +1,24 @@
 .education {
-  min-height: 100vh;
+  position: relative;
+  // min-height: 100vh;
   padding: 100px 0;
   background-color: $brown-color;
   text-align: center;
   color: white;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    min-height: 130%;
+    left: 0;
+    top: 50%;
+    background-image: url(./../../images/decorations/educatDec.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    z-index: 0;
+    mix-blend-mode: screen;
+  }
 }
 
 .education__title {
@@ -18,14 +33,13 @@
   margin-top: 80px;
 }
 .certificates__slider {
-  display: flex;
-  justify-content: center;
-  column-gap: 40px;
 }
 .slider__item {
+  margin: 0 20px;
   flex: none;
   width: 700px;
-  height: 480px;
+  aspect-ratio: 3/2;
+  // height: 480px;
   border-radius: 10px;
   background-size: cover;
   background-repeat: no-repeat;

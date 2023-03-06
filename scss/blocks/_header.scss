@@ -87,7 +87,7 @@
 .hero__photo img {
   position: absolute;
   height: auto;
-  width: 80%;
+  width: 100%;
   object-fit: cover;
   bottom: 0;
   right: 50%;
@@ -154,6 +154,7 @@
     z-index: 0;
   }
   .hero__photo img {
+    width: 80%;
     position: absolute;
     height: auto;
   }
@@ -187,16 +188,6 @@
       transform: translateX(-50%);
       font-weight: 500;
     }
-    // &::after {
-    //   position: absolute;
-    //   content: "Использую методики с доказанной эффективностью!";
-    //   text-align: center;
-    //   bottom: -40px;
-    //   left: 50%;
-    //   width: 100%;
-    //   transform: translateX(-50%);
-    //   font-weight: 500;
-    // }
   }
   .hero__btn {
     position: absolute;

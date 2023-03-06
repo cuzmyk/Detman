@@ -6,16 +6,31 @@
   &::after {
     position: absolute;
     content: "";
-    height: 140px;
+    height: 130px;
     width: 100%;
     left: 0;
     top: 0;
     transform: translateY(-100%);
     background-image: url(./../../images/transitions/additionLine.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
     background-position: top center;
     z-index: 1;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    // height: 100%;
+    width: 100%;
+    aspect-ratio: 5 /2;
+    right: 0;
+    top: 0;
+    background-image: url(./../../images/decorations/footerDec.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+    transform: rotate(270deg) scaleX(-1) translate(0, 150%);
+    mix-blend-mode: screen;
   }
 }
 
@@ -58,6 +73,9 @@
     padding: 10px 0 130px;
     &::after {
       height: 60px;
+    }
+    &::before {
+      display: none;
     }
   }
 
