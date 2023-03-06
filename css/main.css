@@ -384,8 +384,9 @@ legend {
 }
 
 .hero__photo img {
+  overflow: visible;
   position: absolute;
-  height: auto;
+  height: 105%;
   width: 100%;
   object-fit: cover;
   bottom: 0;
