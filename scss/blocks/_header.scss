@@ -87,6 +87,8 @@
 .hero__photo img {
   position: absolute;
   height: auto;
+  height: 105%;
+  overflow: visible;
   width: 100%;
   object-fit: cover;
   bottom: 0;

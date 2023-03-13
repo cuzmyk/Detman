@@ -384,9 +384,10 @@ legend {
 }
 
 .hero__photo img {
-  overflow: visible;
   position: absolute;
+  height: auto;
   height: 105%;
+  overflow: visible;
   width: 100%;
   object-fit: cover;
   bottom: 0;
@@ -556,14 +557,23 @@ legend {
 }
 
 .slider__item {
+  position: relative;
   flex: none;
-  width: 700px;
   aspect-ratio: 3/2;
+  height: 100%;
   border-radius: 10px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   filter: drop-shadow(4px 5px 14px rgba(0, 0, 0, 0.15));
+}
+
+.slider__item img {
+  position: absolute;
+  inset: 0;
+  left: 0;
+  height: 100%;
+  border-radius: inherit;
 }
 
 .swiper-button-prev,
@@ -588,6 +598,10 @@ legend {
 }
 
 @media (max-width: 1000px) {
+  .education {
+    padding: 30px 0 50px;
+  }
+
   .certificates__slider {
     max-width: 80%;
   }
@@ -598,6 +612,11 @@ legend {
 
   .slider__item {
     width: 280px;
+  }
+
+  .slider__item img {
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .swiper-button-prev,
@@ -881,21 +900,6 @@ legend {
   padding: 100px 0;
   overflow: hidden;
 }
-.consultations::before {
-  display: none;
-  position: absolute;
-  content: "";
-  width: 100%;
-  min-height: 50vh;
-  left: 0;
-  bottom: 0;
-  background-image: url(./../images/decorations/consDec.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom center;
-  z-index: 2;
-  mix-blend-mode: screen;
-}
 
 .consultationas__bg {
   position: absolute;
@@ -989,9 +993,6 @@ legend {
 @media (max-width: 1000px) {
   .consultations {
     padding: 100px 0 300px;
-  }
-  .consultations::before {
-    display: block;
   }
 
   .consultations__title {
@@ -1385,6 +1386,13 @@ legend {
   height: 100%;
   width: 5px;
   background-color: #fff;
+}
+
+.footer__links a {
+  transition: 0.3s ease;
+}
+.footer__links a:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 1310px) {

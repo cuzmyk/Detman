@@ -2,21 +2,6 @@
   position: relative;
   padding: 100px 0;
   overflow: hidden;
-  &::before {
-    display: none;
-    position: absolute;
-    content: "";
-    width: 100%;
-    min-height: 50vh;
-    left: 0;
-    bottom: 0;
-    background-image: url(./../../images/decorations/consDec.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom center;
-    z-index: 2;
-    mix-blend-mode: screen;
-  }
 }
 .consultationas__bg {
   position: absolute;
@@ -103,9 +88,6 @@
 @media (max-width: 1000px) {
   .consultations {
     padding: 100px 0 300px;
-    &::before {
-      display: block;
-    }
   }
   .consultations__title {
     margin-bottom: 32px;
