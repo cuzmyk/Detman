@@ -833,12 +833,13 @@ legend {
   filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.1));
   border-radius: 20px;
   flex: none;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  place-content: center;
 }
 
 .reviews__slide img {
   object-fit: contain;
+
   border-radius: inherit;
 }
 
