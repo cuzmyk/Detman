@@ -830,16 +830,15 @@ legend {
 }
 
 .reviews__slide {
+  position: relative;
   filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.1));
   border-radius: 20px;
   flex: none;
   display: grid;
-  place-content: center;
+  place-items: center;
 }
 
 .reviews__slide img {
-  object-fit: contain;
-
   border-radius: inherit;
 }
 
@@ -887,6 +886,7 @@ legend {
     height: 260px;
   }
   .reviews__slider img {
+    position: absolute;
     height: 100%;
     width: auto;
   }
@@ -1088,17 +1088,16 @@ legend {
   font-size: 40px;
   left: 20%;
   top: -40px;
-  opacity: 0.3;
 }
 .rate__price::before {
   position: absolute;
   content: "";
-  top: -15px;
-  left: 15%;
-  width: 40%;
+  top: 50%;
+  left: 0;
+  width: 45%;
   height: 4px;
   background-color: #5b2f10;
-  opacity: 0.3;
+  opacity: 0.8;
 }
 
 .rate_desc {
@@ -1156,10 +1155,6 @@ legend {
   .rate__price::after {
     font-size: 30px;
   }
-  .rate__price::before {
-    top: -20px;
-    left: 17%;
-  }
 
   .pricelist__rate:nth-child(2) .rate__explanation {
     font-size: 15px;
@@ -1189,13 +1184,11 @@ legend {
   .rate__price::after {
     left: 20%;
     top: -10px;
-    opacity: 0.3;
     font-size: 10px;
   }
   .rate__price::before {
-    height: 1px;
-    width: 30%;
-    top: -5px;
+    height: 2px;
+    width: 43%;
   }
 
   .rate_desc {
