@@ -12,6 +12,21 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <div class="nav-btns">
+      <button id="menu-btn" data-state="closed">
+        <div class="menu-btn__icon"></div>
+      </button>
+    </div>
+    <nav class="menu" data-state="closed">
+      <ul class="menu__links">
+        <li><a href="#education">Обо мне</a></li>
+        <li><a href="#help">Чем могу помочь?</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#consultations">Услуги и стоимость</a></li>
+        <li><a href="#footer">Мои соцсети</a></li>
+      </ul>
+    </nav>
+
     <header class="header" style="background-image: url(./images/herobg.png)">
       <div class="container">
         <nav class="header__nav">
@@ -22,9 +37,6 @@
             <li><a href="#consultations">Услуги и стоимость</a></li>
             <li><a href="#footer">Мои соцсети</a></li>
           </ul>
-          <button data-navigation="button">
-            <div class="menu__icon"></div>
-          </button>
         </nav>
       </div>
       <div class="header__hero">
