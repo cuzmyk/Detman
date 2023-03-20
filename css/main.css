@@ -389,7 +389,7 @@ legend {
 }
 
 .menu[data-state="opened"] {
-  height: 100vh;
+  height: 60vh;
 }
 .menu[data-state="opened"] .menu__links li {
   transform: translateX(0%);
